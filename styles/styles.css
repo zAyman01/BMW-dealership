@@ -263,7 +263,6 @@ body {
 .footer {
   background-color: var(--neutral-black);
   color: var(--neutral-white);
-  padding: 3rem 0;
 }
 
 .footer-container {
