@@ -57,16 +57,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--neutral-light);
 }
 
 .divider {
   width: 100%;
-  height: 2px;
-  max-width: 1200px;
-  border-radius: 10px;
-  background-color: var(--neutral-gray);
-  margin: 2rem 0;
+  margin: 1rem 0;
 
 }
 
@@ -460,6 +455,71 @@ main {
   }
 }
 
+/* ===== 3D Model Section ===== */
+.threeD-showcase {
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.threeD-showcase h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.threeD-showcase h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.threeD-showcase p {
+  font-size: 1.2rem;
+  color: var(--neutral-gray);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.threeD-showcase model-viewer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .threeD-showcase h2 {
+    font-size: 2rem;
+  }
+
+  .threeD-showcase p {
+    font-size: 1rem;
+  }
+
+  .threeD-showcase model-viewer {
+    height: 350px;
+  }
+}
+
+
+
 /* ===== MODELS SECTION ===== */
 .models-section {
   padding: 4rem 2rem;
@@ -776,5 +836,437 @@ main {
 
   .models-slider {
     gap: 0.5rem;
+  }
+}
+
+/* ===== WHY BMW SECTION ===== */
+.why-bmw-section {
+  padding: 4rem 0;
+  background-color: var(--neutral-black);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-bmw-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.why-bmw-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neutral-white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.why-bmw-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.why-bmw-header:hover h2::after {
+  width: 130px;
+}
+
+.why-bmw-header p {
+  font-size: 1.2rem;
+  color: var(--neutral-light);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.why-bmw-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-bmw-engine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.why-bmw-engine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-bmw-engine-container {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.why-bmw-engine-content {
+  width: 40%;
+}
+
+.why-bmw-engine-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+}
+
+.why-bmw-engine-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  word-spacing: 0.1rem;
+}
+
+.why-bmw-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.why-bmw-control img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.why-bmw-control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-bmw-control-content {
+  margin-left: 3rem;
+  width: 80%;
+}
+
+.why-bmw-control-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+}
+
+.why-bmw-control-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  word-spacing: 0.1rem;
+}
+
+.why-bmw-brakes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.why-bmw-brakes img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.why-bmw-brakes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-bmw-brakes-content {
+  margin-right: 3rem;
+  width: 70%;
+}
+
+.why-bmw-brakes-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+}
+
+.why-bmw-brakes-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  word-spacing: 0.1rem;
+}
+
+.suspension-steering-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.why-bmw-suspension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.why-bmw-steering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.suspension-steering-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.suspension-steering-container .why-bmw-suspension-container,
+.suspension-steering-container .why-bmw-steering-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suspension-steering-container .why-bmw-suspension-content,
+.suspension-steering-container .why-bmw-steering-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.suspension-steering-container h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+}
+
+.suspension-steering-container p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--neutral-white);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  word-spacing: 0.1rem;
+}
+
+/* ===== WHY BMW SECTION RESPONSIVE STYLES ===== */
+@media screen and (max-width: 1200px) {
+  .why-bmw-engine-container {
+    flex-direction: column;
+    gap: 1rem;
+    top: 85%;
+  }
+
+  .why-bmw-engine-content {
+    width: 70%;
+  }
+
+  .suspension-steering-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .suspension-steering-container img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .why-bmw-control,
+  .why-bmw-brakes {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .why-bmw-control img,
+  .why-bmw-brakes img {
+    width: 100%;
+  }
+
+  .why-bmw-engine-content h3,
+  .why-bmw-control-content h3,
+  .why-bmw-brakes-content h3,
+  .suspension-steering-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .why-bmw-control-content,
+  .why-bmw-brakes-content {
+    margin: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .suspension-steering-container img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .why-bmw-section {
+    padding: 3rem 1rem;
+  }
+
+  .why-bmw-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-bmw-engine,
+  .why-bmw-control,
+  .why-bmw-brakes,
+  .why-bmw-suspension,
+  .why-bmw-steering {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .why-bmw-engine {
+    flex-direction: column;
+  }
+
+  .why-bmw-engine img,
+  .why-bmw-control img,
+  .why-bmw-brakes img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .why-bmw-engine-container {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .why-bmw-engine-content,
+  .why-bmw-control-content,
+  .why-bmw-brakes-content,
+  .suspension-steering-container .why-bmw-suspension-content,
+  .suspension-steering-container .why-bmw-steering-content {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .why-bmw-engine-content h3,
+  .why-bmw-control-content h3,
+  .why-bmw-brakes-content h3,
+  .suspension-steering-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .why-bmw-engine-content p,
+  .why-bmw-control-content p,
+  .why-bmw-brakes-content p,
+  .suspension-steering-container p {
+    font-size: 1rem;
+  }
+
+  .suspension-steering-container img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .why-bmw-header h2 {
+    font-size: 2rem;
+  }
+
+  .why-bmw-header p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .why-bmw-engine-content h3,
+  .why-bmw-control-content h3,
+  .why-bmw-brakes-content h3,
+  .suspension-steering-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .why-bmw-engine-content p,
+  .why-bmw-control-content p,
+  .why-bmw-brakes-content p,
+  .suspension-steering-container p {
+    font-size: 0.9rem;
+  }
+
+  .suspension-steering-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .why-bmw-section {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-bmw-engine-container {
+    padding: 1rem 0;
+  }
+
+  .suspension-steering-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .why-bmw-engine-content,
+  .why-bmw-control-content,
+  .why-bmw-brakes-content,
+  .suspension-steering-container .why-bmw-suspension-content,
+  .suspension-steering-container .why-bmw-steering-content {
+    width: 95%;
   }
 }

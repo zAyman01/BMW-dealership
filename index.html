@@ -17,6 +17,8 @@
 
   <!-- Home Page Links -->
   <link rel="stylesheet" href="styles/home.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 
 <body>
@@ -50,6 +52,7 @@
   </header>
 
   <main>
+    <!-- ===== Hero Section ===== -->
     <section class="hero-section">
       <div class="hero-container">
         <div class="video-container">
@@ -64,6 +67,7 @@
       </div>
     </section>
 
+    <!-- ===== Intro Section ===== -->
     <section class="intro-section">
       <div class="intro-container">
         <div class="intro-text">
@@ -112,6 +116,25 @@
 
     <div class="divider"></div>
 
+    <!-- ===== 3D Model Section ===== -->
+    <section class="threeD-showcase">
+      <h2>Explore the BMW in 3D</h2>
+      <p>Interact with our latest model from every angle.</p>
+      <model-viewer
+        src="assets/Home/bmw_m4csl.glb"
+        alt="3D BMW Model" 
+        camera-controls
+        shadow-intensity="1"
+        camera-orbit="0deg 80deg 6m" 
+        min-camera-orbit="auto auto 2m" 
+        max-camera-orbit="auto auto 10m">
+      </model-viewer>
+    </section>
+
+
+    <div class=" divider"></div>
+
+    <!-- ===== Models Section ===== -->
     <section class="models-section">
       <div class="models-header">
         <h2>Our Models</h2>
@@ -119,46 +142,58 @@
       </div>
       <div class="models-slider-container">
         <div class="models-slider">
-          <div class="model-card" style="--card-index: 1">
+          <div class="model-card">
             <img src="assets/Home/M3.png" alt="BMW M3">
             <h3>BMW M3</h3>
-            <p>The BMW M3 is a high-performance sports sedan that blends everyday practicality with track-ready power. Featuring
-              aggressive styling and precise handling, it’s built for driving enthusiasts who crave adrenaline on every road.</p>
+            <p>The BMW M3 is a high-performance sports sedan that blends everyday practicality with track-ready
+              power.
+              Featuring aggressive styling and precise handling, it's built for driving enthusiasts who crave
+              adrenaline
+              on
+              every road.</p>
           </div>
-          
-          <div class="model-card" style="--card-index: 2">
+
+          <div class="model-card">
             <img src="assets/Home/M4.jpg" alt="BMW M4">
             <h3>BMW M4</h3>
-            <p>The BMW M4 combines coupe elegance with M Division performance. Its twin-turbo inline-6 engine, sleek profile, and
+            <p>The BMW M4 combines coupe elegance with M Division performance. Its twin-turbo inline-6 engine, sleek
+              profile, and
               track-tuned chassis deliver a thrilling ride designed to turn heads and dominate curves.</p>
           </div>
-          
-          <div class="model-card" style="--card-index: 3">
+
+          <div class="model-card">
             <img src="assets/Home/M5.jpg" alt="BMW M5">
             <h3>BMW M5</h3>
-            <p>The BMW M5 is a luxury sports sedan with supercar performance. Powered by a V8 engine and loaded with technology,
-              it offers the perfect balance of sophistication and raw speed — ideal for both daily drives and spirited sprints.
+            <p>The BMW M5 is a luxury sports sedan with supercar performance. Powered by a V8 engine and loaded with
+              technology,
+              it offers the perfect balance of sophistication and raw speed — ideal for both daily drives and
+              spirited
+              sprints.
             </p>
           </div>
-          
-          <div class="model-card" style="--card-index: 4">
+
+          <div class="model-card">
             <img src="assets/Home/X3.jpg" alt="BMW X3">
             <h3>BMW X3</h3>
-            <p>The BMW X3 is a premium compact SUV offering dynamic performance, modern comfort, and advanced driver assistance
+            <p>The BMW X3 is a premium compact SUV offering dynamic performance, modern comfort, and advanced driver
+              assistance
               features. Whether in the city or off the beaten path, it delivers confidence with every drive.</p>
           </div>
-          
-          <div class="model-card" style="--card-index: 5">
+
+          <div class="model-card">
             <img src="assets/Home/XM.jpg" alt="BMW XM">
             <h3>BMW XM</h3>
-            <p>The BMW XM is a bold plug-in hybrid SUV born from BMW M. With electrified performance, futuristic design, and
+            <p>The BMW XM is a bold plug-in hybrid SUV born from BMW M. With electrified performance, futuristic
+              design,
+              and
               luxury inside and out, it redefines what a high-performance SUV can be.</p>
           </div>
-          
-          <div class="model-card" style="--card-index: 6">
+
+          <div class="model-card">
             <img src="assets/Home/M5-Touring.jpg" alt="BMW M5 Touring">
             <h3>BMW M5 Touring</h3>
-            <p>The BMW M5 Touring brings M performance to a versatile wagon body. It combines a spacious interior with
+            <p>The BMW M5 Touring brings M performance to a versatile wagon body. It combines a spacious interior
+              with
               exhilarating speed, making it the perfect fusion of practicality and power for every journey.</p>
           </div>
 
@@ -174,6 +209,119 @@
           </button>
         </div>
       </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ===== Why BMW Section ===== -->
+    <section class="why-bmw-section">
+      <div class="why-bmw-container">
+        <div class="why-bmw-header">
+          <h2>Why BMW?</h2>
+          <p>Explore the reasons why BMW is the ultimate driving machine.</p>
+        </div>
+        <div class="why-bmw-content">
+          <div class="why-bmw-engine">
+            <img src="assets/Home/Engine.jpg" alt="Why BMW">
+            <div class="why-bmw-engine-container">
+              <div class="why-bmw-engine-content">
+                <h3>Epic Engines.</h3>
+                <p>Legendary engineering from the most respected engineers in the world. Innovative M TwinPower
+                  Turbo
+                  technology generates
+                  all the power of a turbo without the lag-for exhilarating acceleration that takes you from 0-60
+                  mph in
+                  as
+                  little as
+                  three seconds.</p>
+              </div>
+              <div class="why-bmw-engine-content">
+                <h3>Dynamic transmissions.</h3>
+                <p>Performance purists will love the standard 6-speed manual transmission in the BMW M3 Sedan and
+                  BMW M4
+                  Coupe, while
+                  drivers who choose a model with the 8-speed M Sport transmission with Drivelogic will enjoy
+                  instantaneous
+                  shifts and
+                  quicker acceleration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-bmw-control">
+            <div class="why-bmw-control-container">
+              <div class="why-bmw-control-content">
+                <h3>Intelligent control.</h3>
+                <p>Experience significantly faster 0-60 mph times and exceptional control with M xDrive, BMW's most
+                  performance-centric
+                  all-wheel drive system, which features adjustable modes for power distribution.</p>
+              </div>
+            </div>
+            <img src="assets/Home/Transmission.jpg" alt="Why BMW">
+          </div>
+
+          <div class="why-bmw-brakes">
+            <img src="assets/Home/Brakes.jpg" alt="Why BMW">
+            <div class="why-bmw-brakes-container">
+              <div class="why-bmw-brakes-content">
+                <h3>Serious stopping power.</h3>
+                <p>The M-specific Integrated Brake System lets you configure brake performance and pedal feel for
+                  personalized control. M
+                  Compound brakes with ventilated and drilled brake discs come standard, while available Carbon
+                  Ceramic
+                  Brakes with
+                  eye-catching gold calipers deliver improved fading stability, high heat resistance, and impressive
+                  weight
+                  savings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="suspension-steering-container">
+            <div class="why-bmw-suspension">
+              <img src="assets/Home/Stability.jpg" alt="Why BMW">
+              <div class="why-bmw-suspension-container">
+                <div class="why-bmw-suspension-content">
+                  <h3>Superior stability.</h3>
+                  <p>This is the high-performance handling that turns M drivers into enthusiasts: the Adaptive M
+                    Suspension
+                    with
+                    electronically controlled dampers ensures stability and control in all scenarios. Suspension
+                    modes
+                    let
+                    you
+                    adjust the
+                    rigidity and responsive of the chassis. The Active M Differential ensures the optimal degree of
+                    lock
+                    between the rear
+                    wheels for optimal agility and traction.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-bmw-steering">
+              <img src="assets/Home/Precision.jpg" alt="Why BMW">
+              <div class="why-bmw-steering-container">
+                <div class="why-bmw-steering-content">
+                  <h3>Precision steering.</h3>
+                  <p>Precision is power in every BMW M. The M-developed electric power steering with Servotronic
+                    lets
+                    drivers
+                    select their
+                    own modes – comfortable for everyday jaunts or sporty for dynamic drives. The steering system is
+                    matched
+                    with
+                    lightweight aluminum suspension components which deliver precise road feedback and
+                    lightning-quick
+                    maneuvers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
   </main>
 
