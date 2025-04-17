@@ -115,7 +115,7 @@
 }
 
 .intro-content .cta-btn:hover {
-  background-color: var(--secondary);
+  background-color: var(--accent-light);
 }
 
 /* ===== SERVICE SECTION ===== */
@@ -498,7 +498,7 @@
 }
 
 .sec-intro .cta-btn:hover {
-  background-color: var(--secondary);
+  background-color: var(--accent-light);
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -547,7 +547,7 @@
 }
 
 .learn-more-btn {
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: white;
   padding: 0.8rem 2rem;
   border: none;
@@ -560,7 +560,7 @@
 }
 
 .learn-more-btn:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--accent-light);
 }
 
 /* ===== CONTACT SECTION ===== */
