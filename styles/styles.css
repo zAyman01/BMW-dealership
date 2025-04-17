@@ -107,7 +107,6 @@ body {
 
 .logo {
   width: 100%;
-  filter: brightness(0) invert(1);
   transition: all 0.3s ease;
 }
 

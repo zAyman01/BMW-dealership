@@ -54,17 +54,36 @@
 
 /* intro Section */
 .intro {
-  background-image: url('bmw-individual-m3-touring-hd-02.jpg');
+
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--neutral-white);
   text-align: center;
   position: relative;
+
   transition: background-color 0.3s ease;
+  
+}
+.intro img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Dark overlay */
+  z-index: 1;
 }
 
 .intro-content {
@@ -109,7 +128,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color:var(--neutral-white);
   text-align: center;
   position: relative;
   transition: background-color 1.3s ease;
@@ -155,7 +174,7 @@
 .cta-btn {
   background-color: #ff6347;
   /* Bright button color */
-  color: white;
+  color:var(--neutral-white);
   padding: 12px 25px;
   font-size: 18px;
   text-decoration: none;
@@ -174,7 +193,7 @@
 /* Parts Catalog Section */
 .parts-catalog {
   padding: 5rem 2rem;
-  background-color: var(--light-color);
+  background-color: var(--neutral-white);
 }
 
 .parts-catalog h2,
@@ -210,7 +229,7 @@
 }
 
 .part-card {
-  background-color: white;
+  background-color: var(--neutral-white);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -342,11 +361,11 @@
 }
 
 .tire .bg {
-  background: url('bn11-1.webp') no-repeat center center/cover;
+  background: url('/assets/Spare parts/bn11-1.webp') no-repeat center center/cover;
 }
 
 .led .bg {
-  background: url('bn11-2.webp') no-repeat center center/cover;
+  background: url('/assets/Spare parts/bn11-2.webp') no-repeat center center/cover;
 }
 
 .content {
