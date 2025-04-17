@@ -9,7 +9,7 @@
   <title>BMW.com | Home</title>
 
   <!-- Shared Links -->
-  <link rel="icon" href="assets/Shared/logo.png">
+  <link rel="icon" href="assets/Shared/logo.svg">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -26,22 +26,25 @@
   <!-- ===== Header Section ===== -->
   <header class="header">
     <a href="index.html" class="logo-container">
-      <img src="assets/Shared/logo.png" alt="BMW Logo" class="logo">
+      <img src="assets/Shared/logo.svg" alt="BMW Logo" class="logo">
     </a>
     <div class="nav-container">
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Models</a>
+            <a href="models.html" class="nav-link">Models</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="spare parts.html" class="nav-link">Spare Parts</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
           </li>
         </ul>
       </nav>
@@ -120,14 +123,8 @@
     <section class="threeD-showcase">
       <h2>Explore the BMW in 3D</h2>
       <p>Interact with our latest model from every angle.</p>
-      <model-viewer
-        src="assets/Home/bmw_m4csl.glb"
-        alt="3D BMW Model" 
-        camera-controls
-        shadow-intensity="1"
-        camera-orbit="0deg 80deg 6m" 
-        min-camera-orbit="auto auto 2m" 
-        max-camera-orbit="auto auto 10m">
+      <model-viewer src="assets/Home/bmw_m4csl.glb" alt="3D BMW Model" camera-controls shadow-intensity="1"
+        camera-orbit="0deg 80deg 6m" min-camera-orbit="auto auto 2m" max-camera-orbit="auto auto 10m">
       </model-viewer>
     </section>
 
@@ -339,18 +336,18 @@
       </ul>
       <div class="footer-pages">
         <h3>Pages</h3>
-        <a href="#" class="footer-page">Branches</a>
-        <a href="#" class="footer-page">Services</a>
-        <a href="#" class="footer-page">Contact</a>
-        <a href="#" class="footer-page">About</a>
+        <a href="branches.html" class="footer-page">Branches</a>
+        <a href="spare parts.html" class="footer-page">Services</a>
+        <a href="contact.html" class="footer-page">Contact</a>
+        <a href="about.html" class="footer-page">About</a>
       </div>
       <div class="footer-socials">
         <h3>Follow Us</h3>
         <div class="footer-socials-container">
-          <a href="#" class="footer-social-facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="footer-social-instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="footer-social-x"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" class="footer-social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com" class="footer-social-facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com" class="footer-social-instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com" class="footer-social-x"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com" class="footer-social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
         </div>
 
       </div>
