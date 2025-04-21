@@ -6,7 +6,6 @@ body{
 .home {
     padding-top: 5rem;
     text-align:center ;
-    overflow-x: hidden;
 }
 
 .home h2 {
@@ -24,84 +23,33 @@ body{
 .car-container{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 2rem;
     margin-top: 1rem;
+    justify-content: center;
 }
-#car1{
-    position: relative;
-    right: 5px;
-    width: 19rem;
-    height: 15rem;
-    
-    
-}
-#car2 {
-    position: relative;
-    left: 100px;
-    width: 25rem;
-    height: 15rem;
-
-}
-#car3 {
-    position: relative;
-    left: 12rem;
-    width: 25rem;
-    height: 12rem;
-
-}
-#car4 {
-    position: relative;
-    right: 61px;
-    width: 27rem;
-    height: 24rem;
-    top: 3rem;
-
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
-#car5 {
-    position: relative;
-    right: 5rem;
-    width: 28rem;
-    height: 27rem;
-    top: 2rem;
-}
-
-#car7 {
-    position: relative;
-    left: 5rem;
-    width: 21rem;
-    height: 22rem;
-    top:3rem ;
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
 
 }
-#car8 {
-    position: relative;
-    right: 6rem;
-    width: 19rem;
-    height: 14rem;
-    top: 6rem;
+.box  img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
-#cari {
-    position: relative;
-    right: 2.5rem;
-    width: 29rem;
-    height: 25rem;
-    
+.models-lines{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
 
-}
-#carm {
-    position: relative;
-    left: 3rem;
-    width: 25rem;
-    height: 25rem;
-    bottom: 2rem;
-
-}
-#carx {
-    position: relative;
-    right: 7rem;
-    width: 19rem;
-    height: 20rem;
-    top: 4rem;
-
-}
