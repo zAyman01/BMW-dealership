@@ -1,0 +1,268 @@
+/* ===== COLORS ===== */
+:root {
+  /* CSS RGB */
+  --primary: #1d3f75;
+  --primary-dark: #152b4f;
+  --primary-light: #0065b1;
+  --secondary: #ff8600;
+  --secondary-dark: #e12a26;
+  --neutral-light: #e6e6e5;
+  --neutral-white: #ffffff;
+  --neutral-black: #000000;
+  --neutral-gray: #808080;
+  --accent: #0065b1;
+  --accent-light: #4a90e2;
+  --accent-dark: #004b8c;
+
+  /* CSS HSL */
+  --primary: hsla(217, 60%, 29%, 1);
+  --primary-light: hsla(206, 100%, 35%, 1);
+  --secondary: hsla(32, 100%, 50%, 1);
+  --secondary-dark: hsla(1, 76%, 52%, 1);
+  --neutral-light: hsla(60, 2%, 90%, 1);
+  --neutral-white: hsla(0, 0%, 100%, 1);
+  --neutral-black: hsla(0, 0%, 0%, 1);
+  --neutral-gray: hsla(0, 0%, 50%, 1);
+  --accent: hsla(206, 100%, 35%, 1);
+  --accent-light: hsla(212, 72%, 59%, 1);
+  --accent-dark: hsla(208, 100%, 27%, 1);
+
+  /* SCSS RGB */
+  --primary: rgba(29, 63, 117, 1);
+  --primary-light: rgba(0, 101, 177, 1);
+  --secondary: rgba(255, 134, 0, 1);
+  --secondary-dark: rgba(225, 42, 38, 1);
+  --neutral-light: rgba(230, 230, 229, 1);
+  --accent: rgba(0, 101, 177, 1);
+  --accent-light: rgba(74, 144, 226, 1);
+  --accent-dark: rgba(0, 75, 140, 1);
+
+  /* SCSS Gradient */
+  --gradient-top: linear-gradient(0deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-right: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom: linear-gradient(180deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-left: linear-gradient(270deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-top-right: linear-gradient(45deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom-right: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-top-left: linear-gradient(225deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom-left: linear-gradient(315deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-radial: radial-gradient(var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--neutral-white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.contact-data {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary));
+}
+
+.contact-data h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neutral-white);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.contact-data h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--neutral-black);
+  border-radius: 2px;
+}
+
+.contact-data p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--neutral-white);
+  margin-bottom: 2rem;
+}
+
+.contact-data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-data-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-data-item i {
+  font-size: 1.4rem;
+  color: var(--neutral-white);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-data-item i:hover {
+  color: var(--neutral-black);
+}
+
+.contact-data-item p {
+  font-size: 1rem;
+  color: var(--neutral-white);
+  margin-bottom: 0;
+}
+
+.contact-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: var(--neutral-black);
+  font-weight: 500;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(0, 101, 177, 0.1);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: auto;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--accent);
+  color: var(--neutral-white);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-dark);
+  box-shadow: 0 4px 8px rgba(0, 101, 177, 0.2);
+}
+
+.contact-form button:active {
+  transform: scale(0.98);
+}
+
+.form-item {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .contact-data,
+  .contact-form {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-data,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-data {
+    padding-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding-top: 2rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-section {
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 2rem;
+  }
+
+  .contact-data,
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-data h2 {
+    font-size: 1.8rem;
+  }
+}
