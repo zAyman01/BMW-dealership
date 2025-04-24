@@ -17,6 +17,8 @@
 
     <!-- Home Page Links -->
     <link rel="stylesheet" href="styles/models.css">
+    <script src="scripts/models.js"></script>
+   
 </head>
 
 <body bgcolor="black">
@@ -70,9 +72,17 @@
         <!--model1-->
         <div class="box">
             <img src="assets/models/1 model/1-series-m135i.png" alt="">
-                        <h4 class="show" ><span>show more</span> </h4>
-            <h2 class="models-lines" >Model 1</h2>
+            <h2 class="models-lines">Model 1</h2>
+        
+            <h4 class="show"><span>Show More</span></h4>
+        
+            <div class="extra-images" style="display: none;">
+                <img src="assets/models/1 model/image1.jpg" alt="" class="extra-img">
+                <img src="assets/models/1 model/image2.jpg" alt="" class="extra-img">
+                <img src="assets/models/1 model/image3.jpg" alt="" class="extra-img">
             </div>
+        </div>
+        
         <!--model2-->
             <div class="box">
             <img src="assets/models/2 model/BMW 2 Series Active Tourer.png"
@@ -171,6 +181,16 @@
         </div>
     </footer>
     <script src="scripts/home.js"></script>
+    <script>
+        document.querySelectorAll('.box .main-image').forEach(image => {
+           image.addEventListener('click', () => {
+               const extra = image.parentElement.querySelector('.extra-images');
+               if (extra) {
+                   extra.style.display = extra.style.display === 'none' ? 'block' : 'none';
+               }
+           });
+       });
+       </script>
 </body>
 
 </html>
