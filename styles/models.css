@@ -91,7 +91,6 @@ body {
     display: none;
     width: 100%;
     padding: 10px;
-    background-color: rgba(36, 35, 35, 0.3);
     border-radius: 1rem;
     opacity: 0;
     max-height: 0;
