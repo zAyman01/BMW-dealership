@@ -26,4 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+
+
+  const buttonText = this.querySelector("span");
+  buttonText.textContent = isVisible ? "Show Cars" : "Hide Cars";
+
 });
