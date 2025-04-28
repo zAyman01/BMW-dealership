@@ -1,0 +1,45 @@
+.main{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history-item{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 500px;
+    height: 350px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.content h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+.content h3{
+    font-size: 1.5rem;
+}
+.content p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 75%;
+
+}
