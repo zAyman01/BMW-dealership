@@ -1,5 +1,7 @@
 body {
     background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -7,6 +9,7 @@ body {
   
     height: 100vh; 
     display: flex;
+    flex-direction: row;
    
 }
 
@@ -55,12 +58,25 @@ h2 span{
     top: 6px;
 }
 
+.exp{
+    color: white;
+    background-color: #005ca3;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    transition:  0.3s ;
+    border-radius: 15px;
+}
+.exp:hover{
+    background-color: #047fdd;
+}
+
 .car-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
     justify-content: center;
+    flex-direction: row;
 }
 
 
