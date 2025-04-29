@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color:var(--neutral-light) ;
 }
 
 
@@ -42,8 +42,9 @@ body {
   align-items: center;
   padding: 40px;
   color: white;
-  background-color: black;
+  background-color: var(--neutral-black);
   text-align: center;
+
 }
 
 h2 span{
@@ -89,7 +90,7 @@ h2 span{
 }
 
 .box .show-cars {
-    background-color: #131212;
+    background-color: var(--primary-dark);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -100,7 +101,7 @@ h2 span{
 }
 
 .box .show-cars:hover {
-    background-color: #c01411;
+    background-color: var(--accent-light);
 }
 
 .models-lines {
