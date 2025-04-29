@@ -1,0 +1,281 @@
+/* ===== COLORS ===== */
+:root {
+  /* CSS RGB */
+  --primary: #1d3f75;
+  --primary-dark: #152b4f;
+  --primary-light: #0065b1;
+  --secondary: #ff8600;
+  --secondary-dark: #e12a26;
+  --neutral-light: #e6e6e5;
+  --neutral-white: #ffffff;
+  --neutral-black: #000000;
+  --neutral-gray: #808080;
+  --accent: #0065b1;
+  --accent-light: #4a90e2;
+  --accent-dark: #004b8c;
+
+  /* CSS HSL */
+  --primary: hsla(217, 60%, 29%, 1);
+  --primary-light: hsla(206, 100%, 35%, 1);
+  --secondary: hsla(32, 100%, 50%, 1);
+  --secondary-dark: hsla(1, 76%, 52%, 1);
+  --neutral-light: hsla(60, 2%, 90%, 1);
+  --neutral-white: hsla(0, 0%, 100%, 1);
+  --neutral-black: hsla(0, 0%, 0%, 1);
+  --neutral-gray: hsla(0, 0%, 50%, 1);
+  --accent: hsla(206, 100%, 35%, 1);
+  --accent-light: hsla(212, 72%, 59%, 1);
+  --accent-dark: hsla(208, 100%, 27%, 1);
+
+  /* SCSS RGB */
+  --primary: rgba(29, 63, 117, 1);
+  --primary-light: rgba(0, 101, 177, 1);
+  --secondary: rgba(255, 134, 0, 1);
+  --secondary-dark: rgba(225, 42, 38, 1);
+  --neutral-light: rgba(230, 230, 229, 1);
+  --accent: rgba(0, 101, 177, 1);
+  --accent-light: rgba(74, 144, 226, 1);
+  --accent-dark: rgba(0, 75, 140, 1);
+
+  /* SCSS Gradient */
+  --gradient-top: linear-gradient(0deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-right: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom: linear-gradient(180deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-left: linear-gradient(270deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-top-right: linear-gradient(45deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom-right: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-top-left: linear-gradient(225deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-bottom-left: linear-gradient(315deg, var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+  --gradient-radial: radial-gradient(var(--primary), var(--accent), var(--secondary), var(--secondary-dark), var(--neutral-light));
+}
+
+/* ===== Branches Page ===== */
+.main {
+  background-color: var(--neutral-black);
+  color: var(--neutral-white);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--neutral-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--neutral-light);
+}
+
+/* Branches Container */
+.branches-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.branch {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.branch:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.branch-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.branch-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.branch:hover .branch-image img {
+  transform: scale(1.1);
+}
+
+.branch-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.branch-hours {
+  color: var(--neutral-white);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.branch-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.branch-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--neutral-white);
+  min-height: 50px;
+}
+
+.branch-details {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.branch-details p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--neutral-light);
+  min-height: 30px;
+}
+
+.branch-schedule {
+  margin-top: 1rem;
+}
+
+.branch-schedule p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--neutral-light);
+}
+
+.branch-schedule ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.branch-schedule li {
+  color: var(--neutral-light);
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.branch-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.branch-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  color: var(--neutral-white);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.branch-link:hover {
+  background: var(--primary-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .branches-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .branches-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .branch-actions {
+    flex-direction: column;
+  }
+
+  .branch-info h3 {
+    min-height: auto;
+    font-size: 1.3rem;
+  }
+
+  .branch-details p {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .branch-image {
+    height: 180px;
+  }
+
+  .branch-info {
+    padding: 1rem;
+  }
+
+  .branch-schedule ul {
+    padding-left: 1rem;
+  }
+}
