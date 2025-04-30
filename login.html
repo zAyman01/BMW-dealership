@@ -18,9 +18,11 @@
   <!-- login Page Links -->
   <link rel="stylesheet" href="styles/login.css">
 </head>
+<style>
+
+</style>
 
 <body>
-
   <!-- ===== Header Section ===== -->
   <header class="header">
     <a href="index.html" class="logo-container">
@@ -54,30 +56,29 @@
 
 
   <!--make a login form-->
-  <div class="container">
-    <div class="form-box login">
+  <main class="container">
+    <div class="form-box">
       <h2>login</h2>
-
-      <div class="input-box">
-        <input type="text" required>
-        <label for="">username</label>
-        <i class="fa-solid fa-user"></i>
-      </div>
-      <div class="input-box">
-        <input type="text" required>
-        <label for="">password</label>
-        <i class="fa-solid fa-lock"></i>
-      </div>
-      <div class="input-box">
-        <button class="btn" type="submit">login</button>
-      </div>
-      <div class="regi-link">
-        <p>Don't have an account ?<a href="">Register</a></p>
-      </div>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required>
+          <label>username</label>
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label for="password">password</label>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="input-box">
+          <button class="btn" type="submit">login</button>
+        </div>
+        <div class="regi-link">
+          <p>Don't have an account ? <a href="#" class="signUplink">sign-up</a></p>
+        </div>
       </form>
     </div>
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </main>
   <!-- ===== Footer Section ===== -->
   <footer class="footer">
     <div class="footer-container">
