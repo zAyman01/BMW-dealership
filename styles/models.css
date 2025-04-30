@@ -1,7 +1,7 @@
+
+
 body {
     background-color: var(--neutral-light);
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -11,34 +11,46 @@ body {
     display: flex;
     flex-direction: row;
    
+   display: flex;
+  align-items: center;
+  
+  background-color: black;
 }
+ 
+
+
+
 
 #pho{
-    width: 100%;
-    height: 120%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-   
+    width: 760px; 
+    height: 760px;
+    object-fit: cover;
+    border-radius: 15px;
  
 }
 .home h2 {
     font-size: 6rem;
     text-transform: uppercase;
     color: white;
+    position: relative; 
+   
+ 
 }
 
 
 
 .home p{
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: 2rem;
     font-weight: weight;
     font-style: normal;
+   
+  
 }
 
 
 .right{
-    flex: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;  
@@ -48,7 +60,13 @@ body {
   background-color: var(--neutral-black);
   text-align: center;
 
+
+  
+
 }
+
+
+
 
 h2 span{
     color: #005ca3;
