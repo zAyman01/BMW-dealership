@@ -14,7 +14,7 @@ body {
    display: flex;
   align-items: center;
   
-  background-color: black;
+  background-color: rgb(5, 0, 0);
 }
  
 
@@ -22,11 +22,10 @@ body {
 
 
 #pho{
-    width: 760px; 
-    height: 760px;
+    width: 1300px; 
+    height: 600px;
     object-fit: cover;
     border-radius: 15px;
- 
 }
 .home h2 {
     font-size: 6rem;
