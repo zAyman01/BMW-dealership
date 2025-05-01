@@ -88,6 +88,10 @@
   box-shadow: none;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /* ===== INTRO ===== */
 .intro {
   background-size: cover;
@@ -570,7 +574,6 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
   padding: 2rem 4rem;
-  
 }
 
 .part-card {
@@ -583,6 +586,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.part-card:hover {
+  transform: translateY(-0.625rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .part-image {
