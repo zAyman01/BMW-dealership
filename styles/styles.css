@@ -87,6 +87,7 @@ body {
 .header {
   position: relative;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -490,3 +491,21 @@ body {
     font-size: 0.8rem;
   }
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus::placeholder,
+select:focus::placeholder,
+textarea:focus::placeholder {
+  color: var(--neutral-gray);
+}
+
+
+
+
+
+
