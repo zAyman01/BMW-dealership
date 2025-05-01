@@ -168,7 +168,7 @@ h2 span {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .box .show-cars:hover {
@@ -184,21 +184,21 @@ h2 span {
 
 .categories {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
   justify-content: center;
 }
 
 .extra-images {
-  margin-top: 10px;
+  margin-top: 1rem;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   display: none;
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 1rem;
   opacity: 0;
   max-height: 0;
@@ -212,7 +212,15 @@ h2 span {
   padding: 20px;
 }
 
-.extra-img {
+.extra-images .extra-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.extra-images .extra-image img{
   width: 300px;
   height: auto;
   border-radius: 10px;
@@ -220,6 +228,12 @@ h2 span {
   transition: transform 0.2s;
 }
 
-.extra-img:hover {
+.extra-images .extra-image img:hover {
   transform: scale(1.1);
+}
+
+.extra-images .extra-image h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
 }
