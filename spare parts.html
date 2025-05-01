@@ -118,7 +118,7 @@
 		<!-- ===== Parts Catalog Section ===== -->
 		<section class="parts-catalog">
 			<h2>Spare Parts Catalog</h2>
-		  
+
 			<div class="catalog-controls">
 				<select id="model-select">
 					<option value="">Select Model</option>
@@ -128,41 +128,42 @@
 					<option value="x3">X3</option>
 					<option value="x5">X5</option>
 					<option value="x7">X7</option>
-				  </select>
-	  
-				  <select id="year-select">
-					  <option value="">Select Year</option>
-					  <option value="2020-2023">2020-2023</option>
-					  <option value="2015-2019">2015-2019</option>
-					  <option value="2010-2014">2010-2014</option>
-					  <option value="2005-2009">2005-2009</option>
-				  </select>
-		  
-			  <div class="search-box">
-				<input type="text" id="searchInput" placeholder="Search parts...">
-				<button id="searchBtn"><i class="fas fa-search"></i></button>
-			  </div>
-		  
-			  <button class="cart-btn" id="cartBtn">
-				<i class="fas fa-shopping-cart"></i>
-				<span class="cart-count" id="cartCount">0</span>
-			  </button>
+				</select>
+
+				<select id="year-select">
+					<option value="">Select Year</option>
+					<option value="2020-2023">2020-2023</option>
+					<option value="2015-2019">2015-2019</option>
+					<option value="2010-2014">2010-2014</option>
+					<option value="2005-2009">2005-2009</option>
+				</select>
+
+				<div class="search-box">
+					<input type="text" id="searchInput" placeholder="Search parts...">
+					<button id="searchBtn"><i class="fas fa-search"></i></button>
+				</div>
+
+				<button class="cart-btn" id="cartBtn">
+					<i class="fas fa-shopping-cart"></i>
+					<span class="cart-count" id="cartCount">0</span>
+				</button>
+
+				<div class="cart-popup" id="cartPopup">
+					<h3>Your Cart</h3>
+					<ul id="cartItems"></ul>
+					<button id="clearCartBtn">Clear Cart</button>
+				</div>
 			</div>
-		  
+
 			<div id="toast" class="toast">Message</div>
-		  
-			<div class="no-items" style="display: none;">
-				<button class="clear-filter-button" id="clearFilterBtn">
-				  <i class="fas fa-arrow-left"></i> Back to Items</button>
-			  </div>
-			  
+
 		</section>
-		  
-		  
+
+
 		<!-- ===== Parts List Section ===== -->
 		<section class="parts-list">
 			<div class="parts-grid" id="parts-container">
-				
+
 				<!-- Part 1 -->
 				<div class="part-card">
 					<div class="part-image">
@@ -349,6 +350,14 @@
 						<button class="add-to-cart">Add to Cart</button>
 					</div>
 				</div>
+
+				<div class="no-items" style="display: none;">
+					<h1>
+						No Items Match Your Search
+					</h1>
+					<button class="clear-search-button" id="clearSearchBtn">
+						<i class="fas fa-arrow-left"></i> Back to Items</button>
+				</div>
 			</div>
 		</section>
 
@@ -362,8 +371,8 @@
 					<h3>Detailling Service</h3>
 				</div>
 				<div class="services-card">
-					<img decoding="async" class="max-w-[128px] max-h-[128px]"
-						src="assets/Spare parts/Car-Inspection.webp" alt="Maintenance Services" width="90px">
+					<img decoding="async" class="max-w-[128px] max-h-[128px]" src="assets/Spare parts/Car-Inspection.webp"
+						alt="Maintenance Services" width="90px">
 					<h3>Maintenance Services</h3>
 				</div>
 				<div class="services-card">
@@ -466,13 +475,10 @@
 			<div class="footer-socials">
 				<h3>Follow Us</h3>
 				<div class="footer-socials-container">
-					<a href="https://www.facebook.com" class="footer-social-facebook"><i
-							class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com" class="footer-social-instagram"><i
-							class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.facebook.com" class="footer-social-facebook"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com" class="footer-social-instagram"><i class="fa-brands fa-instagram"></i></a>
 					<a href="https://www.twitter.com" class="footer-social-x"><i class="fa-brands fa-x-twitter"></i></a>
-					<a href="https://www.linkedin.com" class="footer-social-linkedin"><i
-							class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.linkedin.com" class="footer-social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
 				</div>
 
 			</div>
