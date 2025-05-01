@@ -54,9 +54,29 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: var(--neutral-black);
-  padding: 0 10rem;
+
+  
+  background-color: rgb(5, 0, 0);
+}
+ 
+
+
+
+
+#pho{
+    width: 1300px; 
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.home h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative; 
+   
+ 
+
 }
 
 .home-photo img {
