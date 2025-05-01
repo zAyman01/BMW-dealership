@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>BMW.com | Preview</title>
+
+  <!-- Shared Links -->
+  <link rel="icon" href="assets/Shared/logo.svg">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Preview Page Links -->
+  <link rel="stylesheet" href="styles/preview.css">
+</head>
+
+<body>
+
+  <!-- ===== Header Section ===== -->
+  <header class="header">
+    <a href="index.html" class="logo-container">
+      <img src="assets/Shared/logo.svg" alt="BMW Logo" class="logo">
+    </a>
+    <div class="nav-container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="models.html" class="nav-link">Models</a>
+          </li>
+          <li class="nav-item">
+            <a href="spare parts.html" class="nav-link">Spare Parts</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="sign-in-container">
+      <a href="#" class="sign-in-link">Sign In</a>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main">
+    <!-- Model Preview Section -->
+    <section class="model-preview">
+      <div class="model-content">
+        <div class="model-name">
+          <span><img src="assets/Shared/BMW-M-Logo.png" alt="M Logo" class="model-m-logo"> THE</span>
+          <h1>M5</h1>
+          <p>The Performance Icon</p>
+        </div>
+
+        <div class="model-info">
+          <p class="model-description">The M5 is the ultimate expression of BMW's commitment to performance. It's a car
+            that combines luxury,
+            power, and precision in a way that few others can match.</p>
+
+          <div class="model-price">
+            <p>Starting at</p>
+            <h2>$100,000</h2>
+            <a href="#" class="model-price-button">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="model-img-container">
+        <img src="assets/Preview/m5.jpg" alt="Model Image">
+      </div>
+    </section>
+
+    <!-- Model Specifications Section -->
+    <section class="model-specifications">
+      <h2>Specifications</h2>
+      <div class="specs-tabs">
+        <button class="spec-tab active" data-tab="performance">Performance</button>
+        <button class="spec-tab" data-tab="engine">Engine</button>
+        <button class="spec-tab" data-tab="dimensions">Dimensions</button>
+        <button class="spec-tab" data-tab="features">Features</button>
+      </div>
+
+      <div class="specs-content">
+        <div class="spec-panel active" id="performance">
+          <div class="spec-grid">
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+              <div class="spec-details">
+                <h3>Horsepower</h3>
+                <p>625 HP</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+              <div class="spec-details">
+                <h3>Torque</h3>
+                <p>750 Nm (553 lb-ft)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-stopwatch"></i></div>
+              <div class="spec-details">
+                <h3>0-100 km/h</h3>
+                <p>3.2 seconds</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-wind"></i></div>
+              <div class="spec-details">
+                <h3>Top Speed</h3>
+                <p>305 km/h (190 mph)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-panel" id="engine">
+          <div class="spec-grid">
+            <div class="spec-item">
+              <div class="spec-icon"><img src="assets/Preview/engine.svg" alt="Engine Icon"></div>
+              <div class="spec-details">
+                <h3>Engine</h3>
+                <p>4.4L V8 Twin-Turbo</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-cogs"></i></div>
+              <div class="spec-details">
+                <h3>Transmission</h3>
+                <p>8-Speed M Steptronic Automatic</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+              <div class="spec-details">
+                <h3>Fuel Economy</h3>
+                <p>10.5 L/100 km (20.0 mpg)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+              <div class="spec-details">
+                <h3>Weight</h3>
+                <p>1,950 kg (4,300 lbs)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-panel" id="dimensions">
+          <div class="spec-grid">
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-arrows-alt-h"></i></div>
+              <div class="spec-details">
+                <h3>Length</h3>
+                <p>4,966 mm (195.5 in)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-arrows-alt-v"></i></div>
+              <div class="spec-details">
+                <h3>Width</h3>
+                <p>1,903 mm (74.9 in)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-arrows-alt-v"></i></div>
+              <div class="spec-details">
+                <h3>Height</h3>
+                <p>1,473 mm (58.0 in)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-arrows-alt-h"></i></div>
+              <div class="spec-details">
+                <h3>Wheelbase</h3>
+                <p>2,982 mm (117.4 in)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-panel" id="features">
+          <div class="spec-grid">
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-car"></i></div>
+              <div class="spec-details">
+                <h3>Drive Type</h3>
+                <p>All-Wheel Drive</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+              <div class="spec-details">
+                <h3>Tire Size</h3>
+                <p>275/40R19 (Front), 285/40R19 (Rear)</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-car-battery"></i></div>
+              <div class="spec-details">
+                <h3>Battery</h3>
+                <p>12V 90Ah</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+              <div class="spec-details">
+                <h3>Fuel Tank</h3>
+                <p>68 L (18 gal)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer Section ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <ul class="team-members">
+        <h3>Team Members</h3>
+        <li class="team-member">Khaled Hussien</li>
+        <li class="team-member">Shahd Mohsen</li>
+        <li class="team-member">Razan Ali</li>
+        <li class="team-member">Rana Emad</li>
+        <li class="team-member">Rawan Elshazly</li>
+        <li class="team-member">Mahmoud Ayman</li>
+      </ul>
+      <div class="footer-pages">
+        <h3>Pages</h3>
+        <a href="branches.html" class="footer-page">Branches</a>
+        <a href="spare parts.html" class="footer-page">Services</a>
+        <a href="contact.html" class="footer-page">Contact</a>
+        <a href="about.html" class="footer-page">About</a>
+      </div>
+      <div class="footer-socials">
+        <h3>Follow Us</h3>
+        <div class="footer-socials-container">
+          <a href="https://www.facebook.com" class="footer-social-facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com" class="footer-social-instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com" class="footer-social-x"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com" class="footer-social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 BMW.com. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="scripts/preview.js" type="module"></script>
+</body>
+
+</html>
