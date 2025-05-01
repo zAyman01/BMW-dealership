@@ -80,7 +80,8 @@
 				<div class="service-card">
 					<img loading="lazy" src="assets/Spare parts/warranty.svg" class="service-icon" alt="">
 					<h3>1 YEAR WARRANTY</h3>
-					<p>All of our products are made with care and covered for one year against manufacturing defects.</p>
+					<p>All of our products are made with care and covered for one year against manufacturing defects.
+					</p>
 				</div>
 				<div class="service-card">
 					<img loading="lazy" src="assets/Spare parts/free-delivery.svg" class="service-icon" alt="">
@@ -115,9 +116,10 @@
 		</div>
 
 		<!-- ===== Parts Catalog Section ===== -->
-		<section class="parts-catalog" id="parts">
+		<section class="parts-catalog">
 			<h2>Spare Parts Catalog</h2>
-			<div class="filter-options">
+		  
+			<div class="catalog-controls">
 				<select id="model-select">
 					<option value="">Select Model</option>
 					<option value="3-series">3 Series</option>
@@ -126,25 +128,41 @@
 					<option value="x3">X3</option>
 					<option value="x5">X5</option>
 					<option value="x7">X7</option>
-				</select>
-				<select id="year-select">
-					<option value="">Select Year</option>
-					<option value="2020-2023">2020-2023</option>
-					<option value="2015-2019">2015-2019</option>
-					<option value="2010-2014">2010-2014</option>
-					<option value="2005-2009">2005-2009</option>
-				</select>
-				<select id="category-select">
-					<option value="">Select Category</option>
-					<option value="engine">Engine Parts</option>
-					<option value="brakes">Brakes & Suspension</option>
-					<option value="electrical">Electrical</option>
-					<option value="body">Body Parts</option>
-					<option value="interior">Interior</option>
-				</select>
+				  </select>
+	  
+				  <select id="year-select">
+					  <option value="">Select Year</option>
+					  <option value="2020-2023">2020-2023</option>
+					  <option value="2015-2019">2015-2019</option>
+					  <option value="2010-2014">2010-2014</option>
+					  <option value="2005-2009">2005-2009</option>
+				  </select>
+		  
+			  <div class="search-box">
+				<input type="text" id="searchInput" placeholder="Search parts...">
+				<button id="searchBtn"><i class="fas fa-search"></i></button>
+			  </div>
+		  
+			  <button class="cart-btn" id="cartBtn">
+				<i class="fas fa-shopping-cart"></i>
+				<span class="cart-count" id="cartCount">0</span>
+			  </button>
 			</div>
-
+		  
+			<div id="toast" class="toast">Message</div>
+		  
+			<div class="no-items" style="display: none;">
+				<button class="clear-filter-button" id="clearFilterBtn">
+				  <i class="fas fa-arrow-left"></i> Back to Items</button>
+			  </div>
+			  
+		</section>
+		  
+		  
+		<!-- ===== Parts List Section ===== -->
+		<section class="parts-list">
 			<div class="parts-grid" id="parts-container">
+				
 				<!-- Part 1 -->
 				<div class="part-card">
 					<div class="part-image">
@@ -154,7 +172,8 @@
 					<div class="part-info">
 						<h3>BMW Engine Oil Filter</h3>
 						<p class="part-model">3 Series, 5 Series (2020-2023)</p>
-						<p class="part-description">Genuine BMW oil filter for optimal engine performance and protection.
+						<p class="part-description">Genuine BMW oil filter for optimal engine performance and
+							protection.
 						</p>
 						<span class="part-price">$29.99</span>
 						<button class="add-to-cart">Add to Cart</button>
@@ -184,7 +203,8 @@
 					<div class="part-info">
 						<h3>BMW Steering Wheel</h3>
 						<p class="part-model">7 Series (2015-2019)</p>
-						<p class="part-description">Luxury steering wheel with multifunction controls and premium finish.
+						<p class="part-description">Luxury steering wheel with multifunction controls and premium
+							finish.
 						</p>
 						<span class="part-price">$349.99</span>
 						<button class="add-to-cart">Add to Cart</button>
@@ -258,8 +278,10 @@
 					</div>
 					<div class="part-info">
 						<h3>Emergency Spare Tire Kit</h3>
-						<p class="part-model">7 Series (2010-2014), X3, X5 (2015-2019), 3 Series, 5 Series (2020-2023)</p>
-						<p class="part-description">Includes steel wheel with mounted & balanced Kumho tire - plus the tools you
+						<p class="part-model">7 Series (2010-2014), X3, X5 (2015-2019), 3 Series, 5 Series (2020-2023)
+						</p>
+						<p class="part-description">Includes steel wheel with mounted & balanced Kumho tire - plus the
+							tools you
 							need to change your tire on the side of the road.
 						</p>
 						<span class="part-price">$549.99</span>
@@ -320,7 +342,8 @@
 					<div class="part-info">
 						<h3>BMW Headlight Assembly</h3>
 						<p class="part-model">3 Series (2020-2023)</p>
-						<p class="part-description">Complete headlight assembly with LED technology for perfect illumination.
+						<p class="part-description">Complete headlight assembly with LED technology for perfect
+							illumination.
 						</p>
 						<span class="part-price">$499.99</span>
 						<button class="add-to-cart">Add to Cart</button>
@@ -339,8 +362,8 @@
 					<h3>Detailling Service</h3>
 				</div>
 				<div class="services-card">
-					<img decoding="async" class="max-w-[128px] max-h-[128px]" src="assets/Spare parts/Car-Inspection.webp"
-						alt="Maintenance Services" width="90px">
+					<img decoding="async" class="max-w-[128px] max-h-[128px]"
+						src="assets/Spare parts/Car-Inspection.webp" alt="Maintenance Services" width="90px">
 					<h3>Maintenance Services</h3>
 				</div>
 				<div class="services-card">
@@ -380,9 +403,11 @@
 		<section class="about" id="about">
 			<div class="about-content">
 				<h2>About BMW Genuine Parts</h2>
-				<p>BMW Genuine Parts are designed specifically for your BMW, ensuring perfect fit and optimal performance.
+				<p>BMW Genuine Parts are designed specifically for your BMW, ensuring perfect fit and optimal
+					performance.
 					Each part meets the highest quality standards and is backed by BMW's warranty.</p>
-				<p>Our service centers employ BMW-certified technicians who use only genuine parts and follow BMW service
+				<p>Our service centers employ BMW-certified technicians who use only genuine parts and follow BMW
+					service
 					procedures to maintain your vehicle's integrity and value.</p>
 				<button class="learn-more-btn">Learn More</button>
 			</div>
@@ -391,7 +416,7 @@
 			</div>
 		</section>
 
-		<!-- ===== Contact Section ===== -->
+		<!-- ===== Request Section ===== -->
 		<section class="contact" id="contact">
 			<h2>Request a Service</h2>
 			<div class="contact-container">
@@ -441,10 +466,13 @@
 			<div class="footer-socials">
 				<h3>Follow Us</h3>
 				<div class="footer-socials-container">
-					<a href="https://www.facebook.com" class="footer-social-facebook"><i class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com" class="footer-social-instagram"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.facebook.com" class="footer-social-facebook"><i
+							class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com" class="footer-social-instagram"><i
+							class="fa-brands fa-instagram"></i></a>
 					<a href="https://www.twitter.com" class="footer-social-x"><i class="fa-brands fa-x-twitter"></i></a>
-					<a href="https://www.linkedin.com" class="footer-social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.linkedin.com" class="footer-social-linkedin"><i
+							class="fa-brands fa-linkedin"></i></a>
 				</div>
 
 			</div>
