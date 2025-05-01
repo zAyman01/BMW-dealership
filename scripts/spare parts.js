@@ -18,17 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartPopup = document.getElementById("cartPopup");
   updateCartPopup();
 
-  // // Toast
-  // function showToast(message, type = "success") {
-  //   const toast = document.getElementById("toast");
-  //   toast.textContent = message;
-  //   toast.className = "toast show";
-  //   if (type === "error") toast.classList.add("error");
+   // Toast
+   function showToast(message, type = "success") {
+     const toast = document.getElementById("toast");
+     toast.textContent = message;
+     toast.className = "toast show";
+     if (type === "error") toast.classList.add("error");
 
-  //   setTimeout(() => {
-  //     toast.className = "toast";
-  //   }, 2000);
-  // }
+     setTimeout(() => {
+       toast.className = "toast";
+     }, 2000);
+   }
 
   // Add to cart
   addToCartButtons.forEach((btn) => {
@@ -50,14 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
       cartCount.textContent = count;
       updateCartPopup();
 
-      // showToast(`${productName} added to cart!`, "success");
+       showToast(`${productName} added to cart!`, "success");
     });
   });
 
   // Show/Hide cart
   cartBtn.addEventListener("click", () => {
-    cartPopup.style.display =
-      cartPopup.style.display === "none" ? "block" : "none";
+     cartPopup.classList.toggle("visible");
   });
 
   // Update cart content
@@ -98,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
           cartCount.textContent = count;
           localStorage.setItem("cartItems", JSON.stringify(cartItems));
           updateCartPopup();
-          // showToast(`${item.name} removed from cart`, "error");
+           showToast(`${item.name} removed from cart`, "error");
         });
 
         li.appendChild(img);
@@ -126,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cartCount.textContent = count;
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
         updateCartPopup();
-        // showToast("Cart cleared", "error");
+         showToast("Cart cleared", "error");
       });
       cartPopup.appendChild(clearBtn);
     } else {
@@ -167,9 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  /**
-   * Filters parts based on selected model and year
-   */
+  // Filters parts based on selected model and year
   function filterParts() {
     const selectedModel = modelSelect.value.toLowerCase();
     const selectedYear = yearSelect.value;
