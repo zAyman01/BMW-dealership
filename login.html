@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Title -->
+
   <title>BMW.com | Login</title>
 
   <!-- Shared Links -->
@@ -54,31 +54,74 @@
     </div>
   </header>
 
+  <main class="main">
 
-  <!--make a login form-->
-  <main class="container">
-    <div class="form-box">
-      <h2>login</h2>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" required>
-          <label>username</label>
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="input-box">
-          <input type="password" required>
-          <label for="password">password</label>
-          <i class="fa-solid fa-lock"></i>
-        </div>
-        <div class="input-box">
-          <button class="btn" type="submit">login</button>
-        </div>
-        <div class="regi-link">
-          <p>Don't have an account ? <a href="#" class="signUplink">sign-up</a></p>
-        </div>
-      </form>
+    <div class="container">
+      <div class="curved-shape"></div>
+      <div class="curved-shape2"></div>
+      <!--login form-->
+      <div class="form-box login animation">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" required />
+            <label>Username</label>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-box">
+            <button class="btn" type="submit">login</button>
+          </div>
+          <div class="regi-link"><br>
+            <p>Don't have an account? <a href="#" class="signUplink">Sign up</a></p>
+          </div>
+        </form>
+      </div>
+
+      <!--register form-->
+      <div class="form-box Register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" required />
+            <label>Username</label>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-box">
+            <button class="btn" type="submit">Register</button>
+          </div>
+          <div class="regi-link"><br>
+            <p>Already have an account? <a href="#" class="signinlink">Sign in</a></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info Panel -->
+      <div class="info-content login">
+        <h2>Welcome Back</h2>
+        <p>The Road Is Yours</p>
+      </div>
+      <div class="info-content Register">
+        <h2>Hello, Friend!</h2>
+        <p>Our Journey Starts With Ignition</p>
+      </div>
     </div>
+
   </main>
+
+
+
+
+
   <!-- ===== Footer Section ===== -->
   <footer class="footer">
     <div class="footer-container">
@@ -114,6 +157,7 @@
     </div>
   </footer>
   <script src="scripts/login.js"></script>
+
 </body>
 
 </html>
