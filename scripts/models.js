@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
       model.carName.toLowerCase().includes(carName.toLowerCase())
     );
 
+    console.log(carData);
+    
+
     if (carData) {
       carImage.addEventListener("click", () => {
         window.location.href = `preview.html?carId=${carData.carId}`;

@@ -17,9 +17,10 @@
 
   <!-- Home Page Links -->
   <link rel="stylesheet" href="styles/models.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body bgcolor="black">
+<body>
 
   <!-- ===== Header Section ===== -->
   <header class="header">
@@ -58,11 +59,11 @@
     <section class="home">
 
       <div class="home-content">
-        <div class="line">
-          <h2>FIND YOUR <span>Dream</span> </h2>
+        <div class="line" data-aos="fade-up">
+          <h2>FIND YOUR <span>Dream</span> Car</h2>
         </div>
       </div>
-      <div class="home-photo">
+      <div class="home-photo" data-aos="fade-left">
         <img src="assets/models/upscalemedia-transformed.jpeg" alt="BMW">
       </div>
 
@@ -75,7 +76,7 @@
       </div>
       <div class="car-container">
         <!-- 1 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/1 model/1-series-m135i.png" alt="BMW 1 Series M Coupé">
           <h2 class="models-lines">1 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -92,7 +93,7 @@
         </div>
 
         <!-- 2 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/2 model/2-series.png" alt="BMW 2 Series Coupé">
           <h2 class="models-lines">2 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -113,7 +114,7 @@
         </div>
 
         <!-- 3 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/3 model/m3.webp" alt="BMW 3 Series">
           <h2 class="models-lines">3 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -134,7 +135,7 @@
         </div>
 
         <!-- 4 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/4 model/m4.webp" alt="BMW 4 Series">
           <h2 class="models-lines">4 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -155,7 +156,7 @@
         </div>
 
         <!-- 5 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/5 model/M5-category.webp" alt="BMW 5 Series">
           <h2 class="models-lines">5 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -172,7 +173,7 @@
         </div>
 
         <!-- 6 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/6 model/BMW 6 Series Gran Turismo.png" alt="BMW 6 Series">
           <h2 class="models-lines">6 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -185,7 +186,7 @@
         </div>
 
         <!-- 7 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/7 model/740i.webp" alt="BMW 7 Series">
           <h2 class="models-lines">7 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -202,7 +203,7 @@
         </div>
 
         <!-- 8 Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/8 model/M8.webp" alt="BMW 8 Series">
           <h2 class="models-lines">8 Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -219,7 +220,7 @@
         </div>
 
         <!-- i Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/I model/i5.webp" alt="BMW i Series">
           <h2 class="models-lines">i Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -248,7 +249,7 @@
         </div>
 
         <!-- X Series Models -->
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
           <img src="assets/models/X model/X.webp" alt="BMW X Series">
           <h2 class="models-lines">X Series</h2>
           <button class="show-cars"><span>Show Cars</span></button>
@@ -309,6 +310,10 @@
     </div>
   </footer>
   <script src="scripts/models.js" type="module"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
