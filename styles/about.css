@@ -67,6 +67,7 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  overflow-x: hidden;
 }
 
 .video-container {
@@ -88,7 +89,7 @@
   object-fit: cover;
 }
 
-.video-container .overlay{
+.video-container .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -789,4 +790,241 @@
   color: #666;
   line-height: 1.6;
   max-width: 500px;
+}
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 1200px) {
+  .video-container {
+    height: 80vh;
+  }
+
+  .video-container .content h1 {
+    font-size: 75px;
+  }
+
+  .history-1972 .image,
+  .history-1978 .image,
+  .history-1984 .image,
+  .history-1986 .image,
+  .history-2000 .image,
+  .history-2005 .image,
+  .history-2008 .image,
+  .history-2009 .image,
+  .history-2016 .image,
+  .history-2022 .image {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 2rem;
+    overflow-x: hidden;
+  }
+
+  .video-container {
+    height: 70vh;
+  }
+
+  .video-container .content h1 {
+    font-size: 60px;
+  }
+
+  .intro-section {
+    padding-inline: 2rem;
+    width: 100%;
+  }
+
+  .intro-section p {
+    max-width: 90%;
+  }
+
+  .history-1972,
+  .history-1978,
+  .history-1984,
+  .history-1986,
+  .history-2000,
+  .history-2005,
+  .history-2008,
+  .history-2009,
+  .history-2016,
+  .history-2022 {
+    flex-direction: column;
+    padding-inline: 2rem;
+    gap: 2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .history-1972 .content,
+  .history-1978 .content,
+  .history-1984 .content,
+  .history-1986 .content,
+  .history-2000 .content,
+  .history-2005 .content,
+  .history-2008 .content,
+  .history-2009 .content,
+  .history-2016 .content,
+  .history-2022 .content {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .history-1972 .content p,
+  .history-1978 .content p,
+  .history-1984 .content p,
+  .history-1986 .content p,
+  .history-2000 .content p,
+  .history-2005 .content p,
+  .history-2008 .content p,
+  .history-2009 .content p,
+  .history-2016 .content p,
+  .history-2022 .content p {
+    max-width: 100%;
+  }
+
+  .history-1972 .image,
+  .history-1978 .image,
+  .history-1984 .image,
+  .history-1986 .image,
+  .history-2000 .image,
+  .history-2005 .image,
+  .history-2008 .image,
+  .history-2009 .image,
+  .history-2016 .image,
+  .history-2022 .image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .history-1972 .image img,
+  .history-1978 .image img,
+  .history-1984 .image img,
+  .history-1986 .image img,
+  .history-2000 .image img,
+  .history-2005 .image img,
+  .history-2008 .image img,
+  .history-2009 .image img,
+  .history-2016 .image img,
+  .history-2022 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    height: 60vh;
+  }
+
+  .video-container .content h1 {
+    font-size: 45px;
+  }
+
+  .intro-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-section p {
+    font-size: 1.2rem;
+  }
+
+  .history-1972 .content h1,
+  .history-1978 .content h1,
+  .history-1984 .content h1,
+  .history-1986 .content h1,
+  .history-2000 .content h1,
+  .history-2005 .content h1,
+  .history-2008 .content h1,
+  .history-2009 .content h1,
+  .history-2016 .content h1,
+  .history-2022 .content h1 {
+    font-size: 4rem;
+  }
+
+  .history-1972 .content h3,
+  .history-1978 .content h3,
+  .history-1984 .content h3,
+  .history-1986 .content h3,
+  .history-2000 .content h3,
+  .history-2005 .content h3,
+  .history-2008 .content h3,
+  .history-2009 .content h3,
+  .history-2016 .content h3,
+  .history-2022 .content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .video-container {
+    height: 50vh;
+  }
+
+  .video-container .content h1 {
+    font-size: 35px;
+  }
+
+  .intro-section {
+    padding-inline: 1rem;
+    width: 100%;
+  }
+
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+
+  .history-1972,
+  .history-1978,
+  .history-1984,
+  .history-1986,
+  .history-2000,
+  .history-2005,
+  .history-2008,
+  .history-2009,
+  .history-2016,
+  .history-2022 {
+    padding-inline: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .history-1972 .content h1,
+  .history-1978 .content h1,
+  .history-1984 .content h1,
+  .history-1986 .content h1,
+  .history-2000 .content h1,
+  .history-2005 .content h1,
+  .history-2008 .content h1,
+  .history-2009 .content h1,
+  .history-2016 .content h1,
+  .history-2022 .content h1 {
+    font-size: 3rem;
+  }
+
+  .history-1972 .content h3,
+  .history-1978 .content h3,
+  .history-1984 .content h3,
+  .history-1986 .content h3,
+  .history-2000 .content h3,
+  .history-2005 .content h3,
+  .history-2008 .content h3,
+  .history-2009 .content h3,
+  .history-2016 .content h3,
+  .history-2022 .content h3 {
+    font-size: 1.1rem;
+  }
 }
