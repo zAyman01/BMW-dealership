@@ -1,9 +1,9 @@
 export const models = [
   {
     carId: "bmw-1-series-m-coupe",
-    carName: "BMW 1 Series M Coupé",
+    carName: "1 Series M Coupé",
     subTitle: "The Ultimate Compact M Performance Machine",
-    image: "images/bmw-1-series-m-coupe.jpg",
+    image: "assets/models/1 model/1-series-m135i.png",
     description:
       "The BMW 1 Series M Coupé is a rare, high-performance compact sports car that combines the agility of the 1 Series chassis with M Division engineering. Powered by a turbocharged inline-six engine, it delivers exhilarating performance and precise handling, making it a modern classic among driving enthusiasts.",
     price: 50000,
@@ -37,9 +37,9 @@ export const models = [
   },
   {
     carId: "bmw-128ti",
-    carName: "BMW 1 Series 128ti",
+    carName: "128ti",
     subTitle: "The Front-Wheel-Drive Hot Hatch",
-    image: "images/bmw-128ti.jpg",
+    image: "assets/models/1 model/1-series.png",
     description:
       "The BMW 1 Series 128ti is a sporty hatchback that offers dynamic driving performance with its turbocharged engine and front-wheel-drive layout. Positioned between the standard 1 Series models and the M135i xDrive, the 128ti provides a balance of everyday usability and spirited driving.",
     price: 40000,
@@ -73,9 +73,9 @@ export const models = [
   },
   {
     carId: "bmw-2-series-coupe",
-    carName: "BMW 2 Series Coupé",
+    carName: "2 Series Coupé",
     subTitle: "The Compact Rear-Wheel-Drive Sports Coupé",
-    image: "images/bmw-2-series-coupe.jpg",
+    image: "assets/models/2 model/2-series.png",
     description:
       "The BMW 2 Series Coupé combines classic rear-wheel-drive dynamics with modern design and technology. It's designed for driving enthusiasts seeking agility and performance in a compact package.",
     price: 36000,
@@ -109,9 +109,9 @@ export const models = [
   },
   {
     carId: "bmw-2-series-gran-coupe",
-    carName: "BMW 2 Series Gran Coupé",
+    carName: "2 Series Gran Coupé",
     subTitle: "The Sporty Four-Door Coupé",
-    image: "images/bmw-2-series-gran-coupe.jpg",
+    image: "assets/models/2 model/M2-Gran.png",
     description:
       "The BMW 2 Series Gran Coupé offers a blend of dynamic performance and elegant design in a four-door coupé format. It's equipped with advanced technology and efficient engines, making it suitable for both city driving and long journeys.",
     price: 35000,
@@ -145,9 +145,9 @@ export const models = [
   },
   {
     carId: "bmw-m2-coupe",
-    carName: "BMW M2 Coupé",
+    carName: "M2 Coupé",
     subTitle: "The High-Performance Compact Sports Car",
-    image: "images/bmw-m2-coupe.jpg",
+    image: "assets/models/2 model/m2.png",
     description:
       "The BMW M2 Coupé delivers exhilarating performance with its powerful engine and precise handling. It's designed for driving enthusiasts seeking a compact car with track-capable dynamics.",
     price: 62000,
@@ -181,9 +181,9 @@ export const models = [
   },
   {
     carId: "bmw-330i",
-    carName: "BMW 3 Series (330i)",
+    carName: "330i",
     subTitle: "Sporty Elegance",
-    image: "images/bmw-330i.jpg",
+    image: "assets/models/3 model/M340i.webp",
     description:
       "The 330i combines dynamic performance with everyday practicality, featuring a turbocharged 2.0-liter engine and a refined interior.",
     price: 41450,
@@ -217,9 +217,9 @@ export const models = [
   },
   {
     carId: "bmw-320i",
-    carName: "BMW 3 Series Sedan (320i)",
+    carName: "320i",
     subTitle: "Efficient Luxury",
-    image: "images/bmw-320i.jpg",
+    image: "assets/models/3 model/M330i.webp",
     description:
       "The 320i offers a balance of efficiency and luxury, equipped with a 2.0-liter engine and premium features.",
     price: 41450,
@@ -253,9 +253,9 @@ export const models = [
   },
   {
     carId: "bmw-m3",
-    carName: "BMW M3",
+    carName: "M3",
     subTitle: "Ultimate Performance",
-    image: "images/bmw-m3.jpg",
+    image: "assets/models/3 model/m3.webp",
     description:
       "The M3 delivers track-ready performance with a twin-turbocharged engine and aggressive styling.",
     price: 71800,
@@ -289,9 +289,9 @@ export const models = [
   },
   {
     carId: "bmw-430i-coupe",
-    carName: "BMW 4 Series Coupe (430i)",
+    carName: "430i Coupé",
     subTitle: "Elegant Performance Coupe",
-    image: "images/bmw-430i-coupe.jpg",
+    image: "assets/models/4 model/M430i.webp",
     description:
       "The 430i Coupe combines sleek design with dynamic performance, featuring a turbocharged engine and rear-wheel drive.",
     price: 47400,
@@ -325,9 +325,9 @@ export const models = [
   },
   {
     carId: "bmw-430i-gran-coupe",
-    carName: "BMW 4 Series Gran Coupe (430i xDrive)",
+    carName: "430i Gran Coupé",
     subTitle: "Sporty Elegance in a Four-Door",
-    image: "images/bmw-430i-gran-coupe.jpg",
+    image: "assets/models/4 model/M430i-Gran.webp",
     description:
       "The 430i xDrive Gran Coupe offers the practicality of four doors with the performance of a coupe, featuring all-wheel drive and a turbocharged engine.",
     price: 45900,
@@ -361,9 +361,9 @@ export const models = [
   },
   {
     carId: "bmw-m4-coupe",
-    carName: "BMW M4 (Base Coupe)",
+    carName: "M4 Coupé",
     subTitle: "Track-Ready Performance",
-    image: "images/bmw-m4-coupe.jpg",
+    image: "assets/models/4 model/M4.webp",
     description:
       "The M4 delivers exhilarating performance with a twin-turbocharged inline-six engine, aggressive styling, and rear-wheel drive.",
     price: 74700,
@@ -397,9 +397,9 @@ export const models = [
   },
   {
     carId: "bmw-530i",
-    carName: "BMW 5 Series Sedan (530i)",
+    carName: "530i",
     subTitle: "Luxury and Performance",
-    image: "images/bmw-530i.jpg",
+    image: "assets/models/5 model/M530i.webp",
     description:
       "The 530i offers a blend of luxury and performance, featuring a turbocharged 2.0-liter engine and advanced technology.",
     price: 54800,
@@ -433,9 +433,9 @@ export const models = [
   },
   {
     carId: "bmw-m5",
-    carName: "BMW M5 Sedan",
+    carName: "M5",
     subTitle: "Ultimate Performance Sedan",
-    image: "images/bmw-m5.jpg",
+    image: "assets/models/5 model/M5.webp",
     description:
       "The M5 delivers exceptional performance with a twin-turbocharged V8 engine and advanced handling capabilities.",
     price: 109900,
@@ -461,53 +461,17 @@ export const models = [
       driveType: "All-Wheel Drive",
       tireSize: {
         front: "275/35R20",
-        rear: "285/35R20",
+        rear: "285/35R21",
       },
       battery: "Standard 12V automotive battery",
       fuelTank: 21.1,
     },
   },
   {
-    carId: "bmw-1-series-sedan",
-    carName: "BMW 1 Series Sedan",
-    subTitle: "Compact Luxury Sedan",
-    image: "images/bmw-1-series-sedan.jpg",
-    description:
-      "The 1 Series Sedan offers a compact design with luxury features and efficient performance.",
-    price: 49900,
-    performance: {
-      horsepower: 0,
-      torque: 0,
-      acceleration: 0,
-      topSpeed: 0,
-    },
-    powerTrain: {
-      engine: "2.0L Turbocharged Inline-4",
-      transmission: "8-speed automatic",
-      fuelEconomy: "5.9L/100km to 7.5L/100km",
-      weight: 1365,
-    },
-    dimensions: {
-      length: 4319,
-      width: 1799,
-      height: 1434,
-      wheelbase: 2670,
-    },
-    features: {
-      driveType: "Front-Wheel Drive",
-      tireSize: {
-        front: "225/45R17",
-        rear: "225/45R17",
-      },
-      battery: "Standard 12V automotive battery",
-      fuelTank: 0,
-    },
-  },
-  {
     carId: "bmw-630i-gt",
-    carName: "BMW 6 Series Gran Turismo (630i M Sport)",
+    carName: "630i Gran Turismo",
     subTitle: "Luxury and Performance",
-    image: "images/bmw-630i-gt.jpg",
+    image: "assets/models/6 model/BMW 6 Series Gran Turismo.png",
     description:
       "The 630i M Sport offers a blend of luxury and performance, featuring a turbocharged 2.0-liter engine and advanced technology.",
     price: 88000,
@@ -541,9 +505,9 @@ export const models = [
   },
   {
     carId: "bmw-740i",
-    carName: "BMW 7 Series (740i)",
+    carName: "740i",
     subTitle: "Luxury Performance Sedan",
-    image: "images/bmw-740i.jpg",
+    image: "assets/models/7 model/740i.webp",
     description:
       "The 740i offers a blend of luxury and performance, featuring a turbocharged 3.0-liter inline-six engine and advanced technology.",
     price: 95700,
@@ -577,9 +541,9 @@ export const models = [
   },
   {
     carId: "bmw-i7-xdrive60",
-    carName: "BMW i7 xDrive60",
+    carName: "i7 xDrive60",
     subTitle: "All-Electric Luxury Sedan",
-    image: "images/bmw-i7-xdrive60.jpg",
+    image: "assets/models/7 model/760i.webp",
     description:
       "The i7 xDrive60 combines electric performance with luxury, featuring dual electric motors and a high-capacity battery.",
     price: 119300,
@@ -613,9 +577,9 @@ export const models = [
   },
   {
     carId: "bmw-8-series-convertible",
-    carName: "BMW 8 Series Convertible",
+    carName: "8 Series Convertible",
     subTitle: "Luxury Open-Air Performance",
-    image: "images/bmw-8-series-convertible.jpg",
+    image: "assets/models/8 model/M8.webp",
     description:
       "The 2023 BMW 8 Series Convertible combines elegant design with powerful performance, offering a premium open-air driving experience.",
     price: 97100,
@@ -649,9 +613,9 @@ export const models = [
   },
   {
     carId: "bmw-840i-coupe",
-    carName: "BMW 8 Series Coupe (840i)",
+    carName: "840i Coupé",
     subTitle: "Luxury Performance Coupe",
-    image: "images/bmw-840i-coupe.jpg",
+    image: "assets/models/8 model/M840i.webp",
     description:
       "The 840i Coupe offers a harmonious blend of luxury and performance, featuring a turbocharged inline-six engine, rear-wheel drive, and a host of premium features.",
     price: 87500,
@@ -685,9 +649,9 @@ export const models = [
   },
   {
     carId: "bmw-i4",
-    carName: "BMW i4",
+    carName: "i4",
     subTitle: "Electric Gran Coupe",
-    image: "images/bmw-i4.jpg",
+    image: "assets/models/I model/i4.webp",
     description:
       "The i4 combines the elegance of a coupe with the performance of an M model, offering an engaging driving experience with zero emissions.",
     price: 52000,
@@ -721,9 +685,9 @@ export const models = [
   },
   {
     carId: "bmw-i5",
-    carName: "BMW i5",
+    carName: "i5",
     subTitle: "Electric Executive Sedan",
-    image: "images/bmw-i5.jpg",
+    image: "assets/models/I model/i5.webp",
     description:
       "The i5 offers a blend of luxury and performance, featuring advanced technology and a spacious interior.",
     price: 67795,
@@ -757,9 +721,9 @@ export const models = [
   },
   {
     carId: "bmw-i7",
-    carName: "BMW i7",
+    carName: "i7",
     subTitle: "Electric Luxury Sedan",
-    image: "images/bmw-i7.jpg",
+    image: "assets/models/I model/i7.webp",
     description:
       "The i7 combines luxury with electric performance, offering a serene driving experience with advanced technology.",
     price: 119300,
@@ -793,9 +757,9 @@ export const models = [
   },
   {
     carId: "bmw-ix",
-    carName: "BMW iX",
+    carName: "iX",
     subTitle: "Electric SUV",
-    image: "images/bmw-ix.jpg",
+    image: "assets/models/I model/ix.webp",
     description:
       "The iX offers a spacious interior and advanced technology, combining the practicality of an SUV with electric performance.",
     price: 84100,
@@ -829,9 +793,9 @@ export const models = [
   },
   {
     carId: "bmw-ix2",
-    carName: "BMW iX2",
+    carName: "iX2",
     subTitle: "Electric Compact SUV",
-    image: "images/bmw-ix2.jpg",
+    image: "assets/models/I model/ix2.webp",
     description:
       "The iX2 combines the compact size of the X2 with electric performance, offering a stylish and efficient driving experience.",
     price: 53000,
@@ -864,118 +828,10 @@ export const models = [
     },
   },
   {
-    carId: "bmw-x5-m",
-    carName: "BMW X5 M",
-    subTitle: "High-Performance Luxury SUV",
-    image: "images/bmw-x5-m.jpg",
-    description:
-      "The 2023 BMW X5 M combines the versatility of an SUV with the performance of a sports car, featuring a powerful engine and advanced technology.",
-    price: 108900,
-    performance: {
-      horsepower: 617,
-      torque: 553,
-      acceleration: 3.8,
-      topSpeed: 250,
-    },
-    powerTrain: {
-      engine: "4.4L Twin-Turbocharged V8",
-      transmission: "8-speed automatic",
-      fuelEconomy: "13 MPG city / 18 MPG highway",
-      weight: 5440,
-    },
-    dimensions: {
-      length: 4978,
-      width: 2004,
-      height: 1745,
-      wheelbase: 2975,
-    },
-    features: {
-      driveType: "All-Wheel Drive",
-      tireSize: {
-        front: "275/40R21",
-        rear: "315/35R22",
-      },
-      battery: "Standard 12V automotive battery",
-      fuelTank: 22.5,
-    },
-  },
-  {
-    carId: "bmw-m5-2025",
-    carName: "2025 BMW M5",
-    subTitle: "High-Performance Plug-In Hybrid Sedan",
-    image: "images/bmw-m5-2025.jpg",
-    description:
-      "The 2025 BMW M5 marks a significant evolution in the M Series, introducing a plug-in hybrid powertrain that combines a 4.4-liter twin-turbo V8 engine with an electric motor. This setup delivers exceptional performance, advanced technology, and a luxurious driving experience.",
-    price: 119500,
-    performance: {
-      horsepower: 717,
-      torque: 738,
-      acceleration: 3.5,
-      topSpeed: 305,
-    },
-    powerTrain: {
-      engine: "4.4L Twin-Turbocharged V8 + Electric Motor",
-      transmission: "8-speed M Steptronic automatic",
-      fuelEconomy: "12 MPG city / 17 MPG highway / 14 MPG combined",
-      weight: 2430,
-    },
-    dimensions: {
-      length: 5090,
-      width: 1970,
-      height: 1510,
-      wheelbase: 2995,
-    },
-    features: {
-      driveType: "All-Wheel Drive (M xDrive)",
-      tireSize: {
-        front: "275/35R20",
-        rear: "285/35R21",
-      },
-      battery: "18.6 kWh",
-      fuelTank: 68,
-    },
-  },
-  {
-    carId: "bmw-m4-coupe-2023",
-    carName: "2023 BMW M4 Coupé",
-    subTitle: "High-Performance Sports Coupe",
-    image: "images/bmw-m4-coupe-2023.jpg",
-    description:
-      "The 2023 BMW M4 Coupé delivers exceptional performance and handling, featuring a turbocharged inline-six engine and precise engineering.",
-    price: 74700,
-    performance: {
-      horsepower: 503,
-      torque: 406,
-      acceleration: 4.1,
-      topSpeed: 290,
-    },
-    powerTrain: {
-      engine: "3.0L Inline-6 TwinPower Turbo",
-      transmission: "8-speed automatic",
-      fuelEconomy: "16 MPG city / 23 MPG highway",
-      weight: 3830,
-    },
-    dimensions: {
-      length: 4795,
-      width: 1890,
-      height: 1380,
-      wheelbase: 2855,
-    },
-    features: {
-      driveType: "All-Wheel Drive",
-      tireSize: {
-        front: "275/35R19",
-        rear: "285/30R20",
-      },
-      battery: "Standard 12V automotive battery",
-      fuelTank: 15.6,
-    },
-  },
-  {
     carId: "bmw-x3",
-    carName: "2023 BMW X3",
+    carName: "X3",
     subTitle: "Compact Luxury SUV",
-    image: "images/bmw-x3.jpg",
+    image: "assets/models/X model/X3.webp",
     description:
       "The 2023 BMW X3 offers a blend of performance, comfort, and utility, featuring a range of powerful engines and advanced technology.",
     price: 46200,
@@ -1009,9 +865,9 @@ export const models = [
   },
   {
     carId: "bmw-x4",
-    carName: "2023 BMW X4",
+    carName: "X4",
     subTitle: "Sporty Compact SUV",
-    image: "images/bmw-x4.jpg",
+    image: "assets/models/X model/X4.webp",
     description:
       "The 2023 BMW X4 combines the practicality of an SUV with the performance of a sports coupe, offering dynamic handling and a stylish design.",
     price: 54200,
@@ -1045,9 +901,9 @@ export const models = [
   },
   {
     carId: "bmw-x5",
-    carName: "2023 BMW X5",
+    carName: "X5",
     subTitle: "Luxury Midsize SUV",
-    image: "images/bmw-x5.jpg",
+    image: "assets/models/X model/X5.webp",
     description:
       "The 2023 BMW X5 offers a luxurious interior, advanced technology, and powerful engine options, making it a versatile choice for those seeking performance and comfort.",
     price: 61600,
@@ -1077,6 +933,42 @@ export const models = [
       },
       battery: "Standard 12V automotive battery",
       fuelTank: 21.9,
+    },
+  },
+  {
+    carId: "bmw-x5-m",
+    carName: "X5 M",
+    subTitle: "High-Performance Luxury SUV",
+    image: "assets/models/X model/X5M.webp",
+    description:
+      "The 2023 BMW X5 M combines the versatility of an SUV with the performance of a sports car, featuring a powerful engine and advanced technology.",
+    price: 108900,
+    performance: {
+      horsepower: 617,
+      torque: 553,
+      acceleration: 3.8,
+      topSpeed: 250,
+    },
+    powerTrain: {
+      engine: "4.4L Twin-Turbocharged V8",
+      transmission: "8-speed automatic",
+      fuelEconomy: "13 MPG city / 18 MPG highway",
+      weight: 5440,
+    },
+    dimensions: {
+      length: 4978,
+      width: 2004,
+      height: 1745,
+      wheelbase: 2975,
+    },
+    features: {
+      driveType: "All-Wheel Drive",
+      tireSize: {
+        front: "275/40R21",
+        rear: "315/35R22",
+      },
+      battery: "Standard 12V automotive battery",
+      fuelTank: 22.5,
     },
   },
 ];

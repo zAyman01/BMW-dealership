@@ -86,7 +86,7 @@
 .model-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: all 0.5s ease;
   filter: brightness(0.8);
 }
@@ -126,7 +126,7 @@
 }
 
 .model-name h1 {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   font-weight: 800;
   color: var(--neutral-white);
   line-height: 1;
