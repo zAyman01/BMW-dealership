@@ -495,3 +495,21 @@ body {
     font-size: 0.8rem;
   }
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus::placeholder,
+select:focus::placeholder,
+textarea:focus::placeholder {
+  color: var(--neutral-gray);
+}
+
+
+
+
+
+
