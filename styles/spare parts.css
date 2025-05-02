@@ -3,11 +3,25 @@
   :root {
     font-size: 15px;
   }
+
+  .parts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
   :root {
     font-size: 14px;
+  }
+
+  .parts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+
+  .service-grid,
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 
@@ -15,20 +29,88 @@
   :root {
     font-size: 13px;
   }
+
+  .parts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    padding: 1.5rem;
+  }
+
+  .part-card {
+    width: 100%;
+  }
+
+  .cart {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .search-box input {
+    width: 140px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   :root {
     font-size: 12px;
   }
-}
 
+  .parts-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .part-card {
+    padding: 0.8rem;
+  }
+
+  .part-image {
+    height: 10rem;
+  }
+
+  .search-box input {
+    width: 120px;
+  }
+
+  .cart-popup {
+    width: 250px;
+    right: 10px;
+  }
+
+  .service,
+  .parts-catalog,
+  .services,
+  .about,
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .service-grid,
+  .services-grid {
+    gap: 1rem;
+  }
+
+  .service-card,
+  .services-card {
+    padding: 1.5rem;
+  }
+}
 
 .header {
   background-color: transparent;
   background: linear-gradient(var(--neutral-black), transparent);
   position: absolute;
   box-shadow: none;
+  font-size: 16px;
 }
 
 .header:hover {
@@ -230,7 +312,7 @@ main {
   display: inline-block;
   padding: 0.5rem 1rem;
   background: var(--neutral-white);
-  color:var(--neutral-black);
+  color: var(--neutral-black);
   font-weight: bold;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -238,7 +320,7 @@ main {
 }
 
 .btn:hover {
-  background:var(--neutral-white);
+  background: var(--neutral-white);
 }
 
 /* === Cart & Search Box Container === */
@@ -271,7 +353,7 @@ main {
 
 
 .search-box button {
-  background:var(--accent-light);
+  background: var(--accent-light);
   border: none;
   color: var(--neutral-white);
   padding: 0.7rem;
@@ -280,7 +362,7 @@ main {
 }
 
 .cart-btn {
-  background:var(--accent-light);
+  background: var(--accent-light);
   color: var(--neutral-white);
   border: none;
   padding: 0.9rem 1rem;
@@ -971,7 +1053,7 @@ main {
 @media (max-width: 768px) {
   .intro {
     padding: 1.5rem;
-    height: 60vh;
+    height: 100vh;
     text-align: center;
   }
 
@@ -1023,7 +1105,7 @@ main {
 @media (max-width: 576px) {
   .intro {
     padding: 0 1rem;
-    height: 60vh;
+    height: 100vh;
     text-align: center;
   }
 

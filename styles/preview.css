@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   box-shadow: none;
+  font-size: 16px;
 }
 
 .header:hover {
@@ -64,6 +65,7 @@
   justify-content: center;
   gap: 2rem;
   padding-right: 2rem;
+  margin-top: 15rem;
 }
 
 .model-name {
