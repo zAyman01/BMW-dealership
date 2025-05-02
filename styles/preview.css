@@ -1,3 +1,16 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+}
+
+.header:hover {
+  box-shadow: none;
+}
+
+
 /* ===== PREVIEW STYLES ===== */
 
 .model-preview {
