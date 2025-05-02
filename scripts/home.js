@@ -1,23 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ===== INTRO ANIMATION =====
-  const introSection = document.querySelector(".intro-section");
-
-  // Check if element is in viewport (simplified version)
-  const isInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return rect.top < window.innerHeight * 0.8;
-  };
-
-  // Show intro when scrolled into view
-  const showIntro = () => {
-    if (isInViewport(introSection)) {
-      introSection.classList.add("visible");
-      window.removeEventListener("scroll", showIntro);
-    }
-  };
-
-  window.addEventListener("scroll", showIntro);
-  showIntro(); // Check on load
 
   // ===== SLIDER =====
   const slider = document.querySelector(".models-slider");
