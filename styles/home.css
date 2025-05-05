@@ -63,7 +63,6 @@ main {
   text-align: center;
   color: var(--neutral-white);
   z-index: 2;
-  width: 90%;
   max-width: 800px;
 }
 
@@ -92,7 +91,6 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 0.4rem;
-  text-decoration: none;
   transition: all 0.3s ease-in-out;
   transform: translateY(20px);
   animation: slideUp 1s ease forwards 1.4s;
@@ -265,7 +263,7 @@ main {
   height: 250px;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: brightness(0.95);
+  filter: brightness(0.75);
 }
 
 .pillar img:hover {
@@ -308,6 +306,7 @@ main {
   color: var(--neutral-gray);
   position: relative;
 }
+
 /* Intro Section Responsive */
 @media screen and (max-width: 1024px) {
   .intro-pillars {
@@ -394,8 +393,6 @@ main {
   background-color: var(--neutral-white);
 }
 
-
-
 .threeD-showcase .threeD-showcase-container h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -446,8 +443,6 @@ main {
   }
 }
 
-
-
 /* ===== MODELS SECTION ===== */
 .models-section {
   padding: 4rem 2rem;
@@ -493,7 +488,6 @@ main {
   max-width: 800px;
   margin: 0 auto;
 }
-
 
 .models-slider-container {
   position: relative;
@@ -655,8 +649,8 @@ main {
   }
 
   .model-card {
-    flex: 0 0 calc(80% - 0.75rem);
-    max-width: 90%;
+    flex: 0 0 calc(100% - 0.75rem);
+    max-width: 100%;
   }
 
   .model-card img {
@@ -723,8 +717,8 @@ main {
   }
 
   .model-card {
-    flex: 0 0 calc(90% - 0.375rem);
-    max-width: 90%;
+    flex: 0 0 calc(100% - 0.375rem);
+    max-width: 100%;
   }
 
   .model-card img {
@@ -754,8 +748,8 @@ main {
 
 @media screen and (max-width: 360px) {
   .model-card {
-    flex: 0 0 95%;
-    max-width: 95%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .model-card img {
@@ -1044,7 +1038,6 @@ main {
 }
 
 @media screen and (max-width: 992px) {
-
   .why-bmw-control,
   .why-bmw-brakes {
     flex-direction: column;

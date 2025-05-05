@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
           extraImagesContainer.style.display = "flex";
           setTimeout(() => {
             extraImagesContainer.classList.add("visible");
-          }, 10);
+          }, 100);
         }
 
         const buttonText = this.querySelector("span");

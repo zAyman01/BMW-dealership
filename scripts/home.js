@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ===== INTRO ANIMATION =====
-
   // ===== SLIDER =====
   const slider = document.querySelector(".models-slider");
   const prevBtn = document.querySelector(".prev-btn");
@@ -50,7 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Move slider to current position
   const updateSlider = () => {
-    const cardWidth = cards[0].offsetWidth + 32; // Card width + gap
+    const gap = parseFloat(
+      getComputedStyle(slider).gap || getComputedStyle(slider).columnGap || "32"
+    );
+    const cardWidth = cards[0].offsetWidth + gap;
     const position = -currentIndex * cardWidth;
 
     slider.style.transform = `translateX(${position}px)`;

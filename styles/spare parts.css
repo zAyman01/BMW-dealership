@@ -181,7 +181,6 @@ main {
   color: var(--neutral-white);
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  text-decoration: none;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
 }
@@ -205,7 +204,7 @@ main {
 }
 
 .service-card {
-  background-color: var(--light-color);
+  background-color: var(--neutral-white);
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -315,7 +314,6 @@ main {
   color: var(--neutral-black);
   font-weight: bold;
   border-radius: 0.5rem;
-  text-decoration: none;
   transition: 0.3s ease;
 }
 
@@ -324,13 +322,14 @@ main {
 }
 
 /* === Cart & Search Box Container === */
-.cart {
+
+/* .cart {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1rem;
   gap: 1rem;
-}
+} */
 
 .search-box {
   display: flex;
@@ -378,7 +377,7 @@ main {
   background: var(--secondary-dark);
   padding: 2px 6px;
   border-radius: 50%;
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 /* Cart Popup */
@@ -456,15 +455,15 @@ main {
 .cart-popup button {
   background: none;
   border: none;
-  color: #e74c3c;
+  color: var(--secondary-dark);
   cursor: pointer;
-  font-size: 18px;
-  padding: 5px;
-  transition: color 0.3s;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s;
 }
 
 .cart-popup button:hover {
-  color: #c0392b;
+  color: var(--neutral-white);
 }
 
 .clear-cart {
@@ -477,11 +476,12 @@ main {
   cursor: pointer;
   width: 100%;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .clear-cart:hover {
   background-color: #b02a37;
+  color: var(--neutral-white);
 }
 
 
@@ -508,7 +508,6 @@ main {
 .toast.error {
   background-color: var(--secondary-dark);
 }
-
 
 /* ===== PARTS CATALOG SECTION ===== */
 .parts-catalog {

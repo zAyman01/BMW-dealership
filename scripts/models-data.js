@@ -363,7 +363,7 @@ export const models = [
     carId: "bmw-m4-coupe",
     carName: "M4 Coupé",
     subTitle: "Track-Ready Performance",
-    image: "assets/models/4 model/M4.webp",
+    image: "assets/models/4 model/m4.webp",
     description:
       "The M4 delivers exhilarating performance with a twin-turbocharged inline-six engine, aggressive styling, and rear-wheel drive.",
     price: 74700,
@@ -759,7 +759,7 @@ export const models = [
     carId: "bmw-ix",
     carName: "iX",
     subTitle: "Electric SUV",
-    image: "assets/models/I model/ix.webp",
+    image: "assets/models/I model/iX.webp",
     description:
       "The iX offers a spacious interior and advanced technology, combining the practicality of an SUV with electric performance.",
     price: 84100,
@@ -795,7 +795,7 @@ export const models = [
     carId: "bmw-ix2",
     carName: "iX2",
     subTitle: "Electric Compact SUV",
-    image: "assets/models/I model/ix2.webp",
+    image: "assets/models/I model/iX2.webp",
     description:
       "The iX2 combines the compact size of the X2 with electric performance, offering a stylish and efficient driving experience.",
     price: 53000,
